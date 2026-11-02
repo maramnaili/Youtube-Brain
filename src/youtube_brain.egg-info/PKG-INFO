@@ -1,0 +1,5 @@
+Metadata-Version: 2.4
+Name: youtube-brain
+Version: 0.1.0
+Summary: Timestamped video Q&A using hybrid retrieval
+Requires-Python: >=3.10

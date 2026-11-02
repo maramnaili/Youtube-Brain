@@ -1,0 +1,8 @@
+streamlit==1.45.1
+PyYAML==6.0.2
+youtube-transcript-api==1.2.2
+yt-dlp==2025.3.31
+faster-whisper==1.1.1
+sentence-transformers==4.1.0
+rank-bm25==0.2.2
+numpy==2.2.6

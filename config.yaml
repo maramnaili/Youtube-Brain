@@ -1,0 +1,31 @@
+app:
+  title: YouTube Brain
+  max_upload_mb: 200
+  cache_dir: data/cache
+  examples:
+    - title: "3Blue1Brown: But what is a neural network?"
+      url: https://www.youtube.com/watch?v=aircAruvnKk
+    - title: The surprising science of happiness
+      url: https://www.youtube.com/watch?v=4q1dgn_C0AU
+    - title: How to speak so that people want to listen
+      url: https://www.youtube.com/watch?v=eIho2S0ZahI
+
+pipeline:
+  chunk_seconds: 45
+  overlap_seconds: 10
+  embedding_model: intfloat/multilingual-e5-small
+  whisper_model: small
+  languages:
+    - en
+    - fr
+    - ar
+  retrieval_candidates: 8
+  rrf_k: 60
+  minimum_relevance: 0.15
+
+llm:
+  provider: ollama
+  base_url: http://localhost:11434
+  model: qwen2.5:3b
+  api_key_env: YOUTUBE_BRAIN_API_KEY
+  timeout_seconds: null
